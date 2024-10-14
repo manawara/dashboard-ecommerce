@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${hanken_grotesk.variable} ${play.variable}  bg-gray`}
+      className={`${hanken_grotesk.variable} ${play.variable}  bg-grayLightest text-secondary`}
       suppressHydrationWarning
     >
       <body className={`antialiased`}>
