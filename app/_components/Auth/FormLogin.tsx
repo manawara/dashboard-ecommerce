@@ -3,6 +3,7 @@ import Input from "../Form/Input/Input";
 import { Mail, KeyRound } from "lucide-react";
 import Button from "../Button/Button";
 import Checkbox from "../Form/Checkbox/Checkbox";
+import AuthDivider from "./AuthDivider/AuthDivider";
 import facebookIcon from "@/public/facebook.svg";
 const FormLogin = () => {
   return (
@@ -33,6 +34,8 @@ const FormLogin = () => {
         <Button rounded="xl" size="full" soft="orange">
           Sign In
         </Button>
+
+        <AuthDivider>OR sign with</AuthDivider>
       </form>
     </section>
   );
