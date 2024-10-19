@@ -14,7 +14,7 @@ export const button = cva("px-4 py-2 flex justify-center items-center gap-2", {
       black: "bg-gray-dark border-gray-dark",
       purple: "bg-purple hover:bg-orange-600 border-purple",
       pink: "bg-pink hover:bg-pink-hover border-pink",
-      grayLight: "bg-grayLight hover:bg-orange-600",
+      grayLight: "bg-light hover:bg-orange-600",
     },
     outline: {
       true: "bg-white hover:!text-white",

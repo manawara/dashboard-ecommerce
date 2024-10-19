@@ -19,7 +19,7 @@ const Input = ({ type, name, placeholder, label, icon }: InputProps) => {
           id={name}
           name={name}
           placeholder={placeholder}
-          className="bg-white text-secondary placeholder:text-secondary border-grayLight border-solid border-[1px] rounded-lg px-4 py-2 text-sm focus:border-secondary outline-0 transition-all duration-200 w-full"
+          className="bg-white text-secondary placeholder:text-secondary border-gray-light border-solid border-[1px] rounded-lg px-4 py-2 text-sm focus:border-secondary outline-0 transition-all duration-200 w-full"
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
         />

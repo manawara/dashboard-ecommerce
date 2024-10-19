@@ -43,7 +43,7 @@ const config: Config = {
         },
 
         gray: {
-          grayLight: {
+          light: {
             DEFAULT: "#d8dfe7",
             300: "#F8F7F7",
           },

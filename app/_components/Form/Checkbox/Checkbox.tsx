@@ -23,7 +23,7 @@ const Checkbox = ({ label, name }: InputBase) => {
         defaultChecked={isChecked}
       />
       <div
-        className={`size-3 p-2 border-[1px] border-gray-grayLight hover:border-bg-primary rounded-sm relative top-0 left-0 transition-all duration-300 hover:scale-110 ${
+        className={`size-3 p-2 border-[1px] border-gray-light hover:border-bg-primary rounded-sm relative top-0 left-0 transition-all duration-300 hover:scale-110 ${
           isChecked ? "bg-primary" : ""
         }`}
       >
