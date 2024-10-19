@@ -14,11 +14,14 @@ const Button = ({
   outline,
   rounded,
   size,
+  fontSize,
   soft,
   icon,
 }: ButtonProps) => {
   return (
-    <button className={button({ color, rounded, outline, size, soft })}>
+    <button
+      className={button({ color, rounded, outline, size, soft, fontSize })}
+    >
       {icon && (
         <Image src={icon} height={17} className="!fill-blue" alt={icon} />
       )}

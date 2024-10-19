@@ -29,7 +29,12 @@ export const button = cva("px-4 py-2 flex justify-center items-center gap-2", {
       yellow:
         "!bg-yellow-soft border-yellow-soft !text-yellow hover:!text-white hover:!bg-yellow hover:!border-yellow",
     },
-
+    fontSize: {
+      small: "text-[14px]",
+      normal: "text-base",
+      large: "text-lg",
+      xl: "text-xl",
+    },
     rounded: {
       full: "rounded-full",
       xl: "rounded-xl",
