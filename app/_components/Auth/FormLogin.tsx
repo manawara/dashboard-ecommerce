@@ -6,6 +6,7 @@ import Checkbox from "../Form/Checkbox/Checkbox";
 import AuthDivider from "./AuthDivider/AuthDivider";
 import facebookIcon from "@/public/facebook.svg";
 import HeaderFormAuth from "./HeaderFormAuth/HeaderFormAuth";
+import Link from "next/link";
 const FormLogin = () => {
   return (
     <section className="mt-4">
@@ -29,7 +30,12 @@ const FormLogin = () => {
           label="Password"
           icon={<KeyRound className="text-inherit" strokeWidth={1} size={20} />}
         />
-
+        <Link
+          href="/auth-password"
+          className="-my-3 ml-auto text-sm text-gray-dark hover:text-secondary"
+        >
+          Reset Password
+        </Link>
         <Checkbox label="Remember me" name="rememberMe" />
 
         <Button rounded="xl" size="full" soft="orange" fontSize="small">
