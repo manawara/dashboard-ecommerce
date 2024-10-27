@@ -6,12 +6,12 @@ import { forwardRef } from "react";
 import InputError from "../InputError/InputError";
 
 type CheckboxProps = {
-  checked: boolean;
+  checked: boolean | undefined;
   onChange: () => void;
 } & InputBase;
 
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ label, name, checked, errors, onChange, ...rest }, ref) => {
+  ({ label, name, checked = false, errors, onChange, ...rest }, ref) => {
     return (
       <div className="cursor-pointer inline-flex items-center gap-4 relative mb-2">
         <label className="cursor-pointer inline-flex items-center gap-4">
