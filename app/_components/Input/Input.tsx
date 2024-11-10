@@ -1,7 +1,7 @@
 "use client";
 import { InputBase } from "@/app/types";
 import { forwardRef, useState, type JSX } from "react";
-import InputError from "../InputError/InputError";
+import InputError from "@/app/_components/InputError/InputError";
 
 type InputProps = {
   icon?: JSX.Element;

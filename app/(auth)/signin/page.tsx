@@ -1,4 +1,4 @@
-import FormLogin from "@/app/_components/Auth/FormLogin";
+import FormLogin from "@/app/feature/auth/FormLogin/FormLogin";
 import Logo from "@/app/_components/Logo/Logo";
 import Link from "next/link";
 import React from "react";

@@ -3,7 +3,7 @@
 import { InputBase } from "@/app/types";
 import { CheckIcon } from "lucide-react";
 import { forwardRef } from "react";
-import InputError from "../InputError/InputError";
+import InputError from "@/app/_components/InputError/InputError";
 
 type CheckboxProps = {
   checked: boolean | undefined;

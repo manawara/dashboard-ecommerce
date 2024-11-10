@@ -1,3 +1,4 @@
+import { type ReactNode } from "react";
 import { FieldValues, FieldErrors } from "react-hook-form";
 
 export type InputBase = {
@@ -6,4 +7,8 @@ export type InputBase = {
   type?: string;
   placeholder?: string;
   errors?: FieldErrors<FieldValues>;
+};
+
+export type ChildrenProp = {
+  children: ReactNode;
 };

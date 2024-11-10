@@ -1,5 +1,5 @@
-import FormRegister from "@/app/_components/Auth/FormRegister";
 import Logo from "@/app/_components/Logo/Logo";
+import FormRegister from "@/app/feature/auth/FormRegister/FormRegister";
 import Link from "next/link";
 import React from "react";
 
