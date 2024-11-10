@@ -8,26 +8,53 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique
+  id            String    @id @default(cuid())
+  email    String     @unique
   name     String?
-  role     Role     @default(USER)
-  password String
-  status   UserStatus @default(ACTIVE)
+  role     Role       @default(USER)
+  image           String?   
+  emailVerified DateTime? 
+  password      String?
+  status   UserStatus @default(INACTIVE)
+  createdAt  DateTime   @default(now())
+  termsCondition Boolean @default(true)
+  accounts      Account[]
+  @@map("users")
+
 }
 
 enum Role {
   USER
-  PRODUCT_OWNER @map("Product Owner")
-  WORKSPACE_MANAGER @map("Workspace Manager")
-  PRODUCT_DESIGNER @map("Product Designer")
-  DATA_ANALYST @map("Data Analyst")
-  TECH_LEAD @map("Tech Lead")
-  SUPPORT_TEAM @map("Support team")
+  PRODUCT_OWNER 
+  WORKSPACE_MANAGER
+  PRODUCT_DESIGNER
+  DATA_ANALYST
+  TECH_LEAD
+  SUPPORT_TEAM
 }
 
 enum UserStatus {
   ACTIVE
   INACTIVE
   SUSPENDED
+}
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String  @map("user_id")    // Changed from Int to String to match User.id
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+ 
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+ 
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
 }
