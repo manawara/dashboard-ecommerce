@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Play } from "next/font/google";
 import "./globals.css";
-import { Provider } from "./provider/ThemeProvider";
+import { Provider } from "@/provider/ThemeProvider";
 const hanken_grotesk = Hanken_Grotesk({
   weight: ["100", "300", "400", "500", "700"],
   variable: "--font-hanken",

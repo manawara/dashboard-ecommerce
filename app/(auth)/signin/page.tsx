@@ -1,8 +1,6 @@
-import FormLogin from "@/app/feature/auth/FormLogin/FormLogin";
-import Logo from "@/app/_components/Logo/Logo";
+import Logo from "@/components/Logo/Logo";
+import FormLogin from "@/feature/auth/components/FormLogin/FormLogin";
 import Link from "next/link";
-import React from "react";
-
 const Signin = () => {
   return (
     <section className="flex flex-col justify-center mx-auto w-full px-4 sm:w-2/3 md:w-1/2 lg:w-2/5">

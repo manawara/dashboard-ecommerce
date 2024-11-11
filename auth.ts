@@ -1,7 +1,7 @@
 import NextAuth, { DefaultSession } from "next-auth";
 import authConfig from "./auth.config";
 import { PrismaAdapter } from "@auth/prisma-adapter";
-import db from "./app/lib/db/db";
+import db from "./lib/db/db";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { JWT } from "next-auth/jwt";
 

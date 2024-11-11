@@ -1,17 +1,17 @@
 "use client";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Input from "@/app/_components/Input/Input";
+import Input from "@/components/Input/Input";
 import { Mail, KeyRound, User2Icon } from "lucide-react";
-import Button from "../../../_components/Button/Button";
-import Checkbox from "@/app/_components/Checkbox/Checkbox";
+import Button from "@/components/Button/Button";
+import Checkbox from "@/components/Checkbox/Checkbox";
 import AuthDivider from "../AuthDivider/AuthDivider";
-import HeaderFormAuth from "../HeaderFormAuth/HeaderFormAuth";
-import { registerSchema } from "@/app/lib/zod";
+import HeaderFormAuth from "@/feature/auth/components/HeaderFormAuth/HeaderFormAuth";
+import { registerSchema } from "@/lib/zod";
 import { useForm, Controller } from "react-hook-form";
 import { createUser } from "@/actions/auth";
 import { useTransition, useEffect, useState } from "react";
-import AlertInfo from "../../../_components/Alert/Alert";
+import AlertInfo from "@/components/Alert/Alert";
 
 const FormRegister = () => {
   const [error, setError] = useState<string | null>(null);

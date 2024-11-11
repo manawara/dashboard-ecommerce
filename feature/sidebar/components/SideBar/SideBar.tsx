@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../../../../_components/Logo/Logo";
 import { ChevronsRight } from "lucide-react";
+import Logo from "@/components/Logo/Logo";
 
 const SideBar = () => {
   return (

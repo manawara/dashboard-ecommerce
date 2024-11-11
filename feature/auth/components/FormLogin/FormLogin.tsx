@@ -1,21 +1,22 @@
 "use client";
 import React, { useState, useTransition } from "react";
 import { z } from "zod";
-import Input from "@/app/_components/Input/Input";
+import Input from "@/components/Input/Input";
 import { Mail, KeyRound } from "lucide-react";
-import Button from "@/app/_components/Button/Button";
-import Checkbox from "@/app/_components/Checkbox/Checkbox";
+import Button from "@/components/Button/Button";
+import Checkbox from "@/components/Checkbox/Checkbox";
 import AuthDivider from "../AuthDivider/AuthDivider";
 import Link from "next/link";
-import { loginSchema } from "@/app/lib/zod";
+import { loginSchema } from "@/lib/zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, Controller } from "react-hook-form";
 import { loginUser } from "@/actions/auth";
-import Alert from "@/app/_components/Alert/Alert";
+import Alert from "@/components/Alert/Alert";
 import { redirect } from "next/navigation";
 import { DEFAULT_LOGIN_REDIRECT } from "@/routes";
-import { handleLoginProvider } from "@/app/lib/helper";
+import { handleLoginProvider } from "@/lib/helper";
 import HeaderFormAuth from "../HeaderFormAuth/HeaderFormAuth";
+
 const FormLogin = () => {
   const [isPending, startTransition] = useTransition();
 

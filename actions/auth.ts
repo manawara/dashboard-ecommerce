@@ -1,7 +1,7 @@
 "use server";
 import * as z from "zod";
-import db from "@/app/lib/db/db";
-import { loginSchema, registerSchema } from "@/app/lib/zod";
+import db from "@/lib/db/db";
+import { loginSchema, registerSchema } from "@/lib/zod";
 import { signIn } from "@/auth";
 import bcrypt from "bcryptjs";
 import { AuthError } from "next-auth";

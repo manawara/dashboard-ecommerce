@@ -2,7 +2,7 @@ import { ZodError } from "zod";
 import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import type { NextAuthConfig } from "next-auth";
-import { loginSchema } from "./app/lib/zod";
+import { loginSchema } from "./lib/zod";
 import { getUserByEmail } from "./actions/auth";
 import GitHub from "next-auth/providers/github";
 import Google from "next-auth/providers/google";

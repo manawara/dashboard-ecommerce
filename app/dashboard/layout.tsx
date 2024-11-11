@@ -1,5 +1,6 @@
-import SideBar from "../feature/sidebar/components/SideBar/SideBar";
-import { ChildrenProp } from "../types";
+import SideBar from "@/feature/sidebar/components/SideBar/SideBar";
+import { ChildrenProp } from "../../types";
+
 const DashboardLayout = ({ children }: ChildrenProp) => {
   return (
     <main className="w-full min-h-screen">

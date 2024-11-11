@@ -1,9 +1,9 @@
 "use client";
 
-import { InputBase } from "@/app/types";
+import { InputBase } from "@/types";
 import { CheckIcon } from "lucide-react";
 import { forwardRef } from "react";
-import InputError from "@/app/_components/InputError/InputError";
+import InputError from "@/components/InputError/InputError";
 
 type CheckboxProps = {
   checked: boolean | undefined;
