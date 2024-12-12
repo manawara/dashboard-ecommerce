@@ -58,3 +58,23 @@ model Account {
   @@unique([provider, providerAccountId])
   @@map("accounts")
 }
+
+model Section {
+  id        String     @id @default(cuid())
+  name      String
+  order     Int
+  menus     Menu[]
+}
+
+model Menu {
+  id         String    @id @default(cuid())
+  icon       String?
+  label      String
+  path       String?
+  order      Int
+  section    Section   @relation(fields: [sectionId], references: [id])
+  sectionId  String
+  parent     Menu?     @relation("MenuToSubmenu", fields: [parentId], references: [id])
+  parentId   String?
+  children   Menu[]    @relation("MenuToSubmenu")
+}
