@@ -1,69 +1,123 @@
-export const dataNav = [
+export const data = [
   {
-    name: "general",
+    id: "section-1",
+    name: "GENERAL",
+    order: 1,
     children: [
       {
-        name: "Dashboard",
-        children: [],
+        id: "menu-1",
+        icon: "LayoutDashboard",
+        label: "Dashboard",
+        path: "/dashboard",
+        order: 1,
+        sectionId: "section-1",
       },
       {
-        name: "Products",
+        id: "menu-2",
+        icon: "Shirt",
+        label: "Products",
+        path: null,
+        order: 2,
+        sectionId: "section-1",
         children: [
           {
-            name: "List",
+            id: "menu-2-1",
+            icon: null,
+            label: "List",
+            path: "/products/list",
+            order: 1,
+            sectionId: "section-1",
           },
           {
-            name: "Create",
+            id: "menu-2-2",
+            icon: null,
+            label: "Grid",
+            path: "/products/grid",
+            order: 2,
+            sectionId: "section-1",
+          },
+          {
+            id: "menu-2-3",
+            icon: null,
+            label: "Details",
+            path: "/products/details",
+            order: 3,
+            sectionId: "section-1",
+          },
+          {
+            id: "menu-2-4",
+            icon: null,
+            label: "Edit",
+            path: "/products/edit",
+            order: 4,
+            sectionId: "section-1",
+          },
+          {
+            id: "menu-2-5",
+            icon: null,
+            label: "Create",
+            path: "/products/create",
+            order: 5,
+            sectionId: "section-1",
           },
         ],
       },
       {
-        name: "Category",
+        id: "menu-3",
+        icon: null,
+        label: "Category",
+        path: null,
+        order: 3,
+        sectionId: "section-1",
+      },
+      {
+        id: "menu-4",
+        icon: null,
+        label: "Inventory",
+        path: "/inventory",
+        order: 4,
+        sectionId: "section-1",
+      },
+      {
+        id: "menu-5",
+        icon: null,
+        label: "Orders",
+        path: "/orders",
+        order: 5,
+        sectionId: "section-1",
+      },
+    ],
+  },
+  {
+    id: "section-2",
+    name: "MANAGEMENT",
+    order: 2,
+    children: [
+      {
+        id: "menu-6",
+        icon: null,
+        label: "Purchases",
+        path: null,
+        order: 1,
+        sectionId: "section-2",
         children: [
           {
-            name: "List",
-          },
-          {
-            name: "Create",
+            id: "menu-6-1",
+            icon: null,
+            label: "test",
+            path: "/purchases",
+            order: 1,
+            sectionId: "section-22",
           },
         ],
       },
       {
-        name: "Orders",
-        children: [
-          {
-            name: "List",
-          },
-          {
-            name: "Create",
-          },
-        ],
-      },
-      {
-        name: "Attributes",
-        children: [
-          {
-            name: "List",
-          },
-          {
-            name: "Create",
-          },
-        ],
-      },
-      {
-        name: "Invoices",
-        children: [
-          {
-            name: "List",
-          },
-          {
-            name: "Create",
-          },
-        ],
-      },
-      {
-        name: "Settings",
-        children: [],
+        id: "menu-7",
+        icon: null,
+        label: "Attributes",
+        path: "/attributes",
+        order: 2,
+        sectionId: "section-2",
       },
     ],
   },

@@ -12,3 +12,10 @@ export type InputBase = {
 export type ChildrenProp = {
   children: ReactNode;
 };
+
+export type ItemsArrayName = {
+  items?: Array<{
+    name: string;
+    children?: Array<{ name: string }>;
+  }>;
+};

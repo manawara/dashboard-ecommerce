@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronsRight } from "lucide-react";
 import Logo from "@/components/Logo/Logo";
+import NavBar from "../NavBar/NavBar";
 
 const SideBar = () => {
   return (
@@ -11,6 +12,7 @@ const SideBar = () => {
           <ChevronsRight />
         </button>
       </div>
+      <NavBar />
     </aside>
   );
 };
