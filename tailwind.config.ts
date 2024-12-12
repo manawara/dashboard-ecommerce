@@ -50,6 +50,7 @@ const config: Config = {
           },
           DEFAULT: "#b0b0bb",
           dark: {
+            300: "#9097a7",
             DEFAULT: "#323a46",
           },
         },
