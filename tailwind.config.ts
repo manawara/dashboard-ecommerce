@@ -51,6 +51,7 @@ const config: Config = {
           DEFAULT: "#b0b0bb",
           dark: {
             300: "#9097a7",
+            500: "#262D34",
             DEFAULT: "#323a46",
           },
         },
