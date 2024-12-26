@@ -33,7 +33,7 @@ export default function RootLayout({
     >
       <body className={`antialiased`}>
         <Provider>
-          <main>{children}</main>
+          <main className="overflow-hidden">{children}</main>
         </Provider>
       </body>
     </html>
