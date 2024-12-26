@@ -1,11 +1,15 @@
 import logo from "@/public/logo.svg";
 import Image from "next/image";
 
-const Logo = () => {
+const Logo = ({ className }: { className?: string }) => {
   return (
     <div className="flex gap-2">
-      <Image src={logo} height={24} alt="logo dashboard" />
-      <span className="text-xl font-semibold font-hanken ">CommerceCore</span>
+      <Image
+        src={logo}
+        width={140}
+        alt="logo dashboard"
+        className={className}
+      />
     </div>
   );
 };
