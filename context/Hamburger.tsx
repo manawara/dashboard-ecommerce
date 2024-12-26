@@ -1,7 +1,7 @@
 import { ChildrenProp } from "@/types";
 import React, { createContext, useContext, useState } from "react";
 
-const HamburgerContext = createContext({ open: false });
+const HamburgerContext = createContext({ open: false, handleOpen: () => {} });
 
 export const useContextHamburger = () => {
   const ctx = useContext(HamburgerContext);
