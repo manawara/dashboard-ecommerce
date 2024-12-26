@@ -4,7 +4,7 @@ import Link from "next/link";
 const Signin = () => {
   return (
     <section className="flex flex-col justify-center mx-auto w-full px-4 sm:w-2/3 md:w-1/2 lg:w-2/5">
-      <Logo />
+      <Logo className="justify-center mx-auto fill-white" />
       <FormLogin />
 
       <p className="text-primary text-sm text-center mt-8">
