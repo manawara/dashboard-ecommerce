@@ -45,9 +45,7 @@ const FormRegister = () => {
         if (data?.error) {
           setError(data?.error as string);
         } else if (data.success) {
-          setSuccess(
-            "Thank you for registering with our platform! An activation link has been sent to your registered email address"
-          );
+          setSuccess("Thank you for registering with our platform!");
           reset();
         }
       });
